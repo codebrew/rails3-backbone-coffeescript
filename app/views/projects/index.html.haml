@@ -18,4 +18,9 @@
 
 %br
 
-= link_to 'New Project', new_project_path
+/ = link_to 'New Project', new_project_path
+= link_to 'New Project', "#/new"
+
+:javascript
+  window.controller = new App.Controllers.ProjectsController({projects: #{@projects.to_json}});
+  Backbone.history.start();
