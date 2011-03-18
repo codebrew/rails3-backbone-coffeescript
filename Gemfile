@@ -29,3 +29,5 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "haml", ">= 3.0.0"
+gem "haml-rails"
