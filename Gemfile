@@ -13,12 +13,13 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "compass"
 gem "compass-960-plugin"
-gem "mongoid", ">= 2.0.0.rc.7"
+gem "mongoid", :git => "git://github.com/mongoid/mongoid.git"
 gem "bson_ext", ">= 1.2.4"
 gem "jammit"
 gem "barista", "~> 1.0"
 gem "devise", ">= 1.2.rc"
 gem 'inherited_resources', '~> 1.2.1'
+gem 'has_scope'
 
 group :test, :development do
   gem "rspec-rails", ">= 2.5"

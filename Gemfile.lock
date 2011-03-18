@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/mongoid/mongoid.git
+  revision: 4a40af7272da83893d8fb1c3bf430121473b921e
+  specs:
+    mongoid (2.0.0.rc.7)
+      activemodel (~> 3.0)
+      mongo (~> 1.2)
+      tzinfo (~> 0.3.22)
+      will_paginate (~> 3.0.pre)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -78,11 +88,6 @@ GEM
     mime-types (1.16)
     mongo (1.2.4)
       bson (>= 1.2.4)
-    mongoid (2.0.0.rc.7)
-      activemodel (~> 3.0)
-      mongo (~> 1.2)
-      tzinfo (~> 0.3.22)
-      will_paginate (~> 3.0.pre)
     mongoid-rspec (1.4.1)
       mongoid (~> 2.0.0.rc.7)
       mongoid-rspec
@@ -154,9 +159,10 @@ DEPENDENCIES
   fabrication
   haml (>= 3.0.0)
   haml-rails
+  has_scope
   inherited_resources (~> 1.2.1)
   jammit
-  mongoid (>= 2.0.0.rc.7)
+  mongoid!
   mongoid-rspec (>= 1.4.1)
   rails (= 3.0.5)
   rspec-rails (>= 2.5)
