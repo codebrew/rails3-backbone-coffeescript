@@ -10,13 +10,14 @@ class App.Controllers.ProjectsController extends Backbone.Controller
     ".*": "index"
     
   newProject: ->
-    alert("new")
+    @view = new App.Views.Projects.NewView(model: new @projects.model())
+    $("#projects").html(@view.render().el)
     
   index: ->
-    @view = new App.Views.Projects.IndexView({projects:@projects})
+    @view = new App.Views.Projects.IndexView(projects: @projects)
     $("#projects").html(@view.render().el)
     
   show:(id) ->
     project = @projects.get(id)
-    @view = new App.Views.Projects.ShowView({model:project})
+    @view = new App.Views.Projects.ShowView(model:project)
     $("#projects").html(@view.render().el)

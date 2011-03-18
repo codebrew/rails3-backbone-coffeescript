@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Fri, 18 Mar 2011 21:40:26 GMT from
+/* DO NOT MODIFY. This file was compiled Fri, 18 Mar 2011 22:00:37 GMT from
  * /Users/fitz/Projects/rails3-backbone-coffeescript/app/coffeescripts/controllers/projects_controller.coffee
  */
 
@@ -27,7 +27,10 @@
       ".*": "index"
     };
     ProjectsController.prototype.newProject = function() {
-      return alert("new");
+      this.view = new App.Views.Projects.NewView({
+        model: new this.projects.model()
+      });
+      return $("#projects").html(this.view.render().el);
     };
     ProjectsController.prototype.index = function() {
       this.view = new App.Views.Projects.IndexView({
