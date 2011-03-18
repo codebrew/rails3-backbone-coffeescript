@@ -1,0 +1,5 @@
+rvm --create 1.9.2@rails3-backbone-coffeescript
+
+if ! command -v bundle ; then
+  gem install bundler
+fi
