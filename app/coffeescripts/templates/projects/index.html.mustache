@@ -1,3 +1,25 @@
-<h1>asdfasdfsdf</h1>
+<h1> Listing projects </h1>
 
-<p>lkjasdlfkjsaldkf</p>
+<table>
+  <tr>
+    <th> Name </th>
+    <th> Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  {{#projects}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{description}}</td>
+      <td><a href="#/{{_id}}">Show</td>
+      <td>Edit</td>
+      <td>Destroy</td>
+    </tr>
+  {{/projects}}
+  
+</table>
+<br/>
+
+<a href="#/new">New Project</a>

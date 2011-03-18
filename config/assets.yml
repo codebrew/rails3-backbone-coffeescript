@@ -15,9 +15,9 @@ javascripts:
     - public/javascripts/app/lib/*
     - public/javascripts/app/app.js
     - public/javascripts/app/models/*
-    - public/javascripts/app/controllers/*
     - app/coffeescripts/templates/**/*
-    - public/javascripts/app/views/*
+    - public/javascripts/app/views/**/*
+    - public/javascripts/app/controllers/*
     
 stylesheets:
   common:

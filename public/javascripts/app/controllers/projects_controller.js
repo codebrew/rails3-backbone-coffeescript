@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Fri, 18 Mar 2011 19:29:03 GMT from
+/* DO NOT MODIFY. This file was compiled Fri, 18 Mar 2011 21:40:26 GMT from
  * /Users/fitz/Projects/rails3-backbone-coffeescript/app/coffeescripts/controllers/projects_controller.coffee
  */
 
@@ -17,19 +17,31 @@
     }
     __extends(ProjectsController, Backbone.Controller);
     ProjectsController.prototype.initialize = function(options) {
-      console.log(options);
       this.projects = new App.Collections.ProjectsCollection();
       return this.projects.refresh(options.projects);
     };
     ProjectsController.prototype.routes = {
       "/new": "newProject",
+      "/index": "index",
+      "/:id": "show",
       ".*": "index"
     };
     ProjectsController.prototype.newProject = function() {
       return alert("new");
     };
     ProjectsController.prototype.index = function() {
-      return alert("index");
+      this.view = new App.Views.Projects.IndexView({
+        projects: this.projects
+      });
+      return $("#projects").html(this.view.render().el);
+    };
+    ProjectsController.prototype.show = function(id) {
+      var project;
+      project = this.projects.get(id);
+      this.view = new App.Views.Projects.ShowView({
+        model: project
+      });
+      return $("#projects").html(this.view.render().el);
     };
     return ProjectsController;
   })();
