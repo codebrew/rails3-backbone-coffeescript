@@ -1,5 +1,6 @@
 window.App =
   Models: {}
+  Collections: {}
   Controllers: {}
   Views: {}
 
