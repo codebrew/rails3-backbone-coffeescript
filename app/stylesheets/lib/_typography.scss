@@ -1,0 +1,150 @@
+/* Facebook Defaults */
+
+$main-color: #555555;
+$main-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+$helvetica-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+
+/* All vertical blocks should be in increments of 18 */
+
+$baseline: 18px;
+
+@mixin default-header() {
+  color:$main-color;
+  font-family:$helvetica-family;
+  //font-weight: bold;
+  margin:0;
+  padding:0;
+}
+
+@mixin h1() {
+  @include default-header;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+@mixin h2() {
+  @include default-header;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@mixin h3() {
+  @include default-header;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin h4() {
+  @include default-header;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@mixin default-typography() {
+  body {
+    background:none repeat scroll 0 0 #FFFFFF;
+    color:$main-color;
+    direction:ltr;
+    font-family:$helvetica-family;
+    font-size:12px;
+    margin:0;
+    padding:0;
+    text-align:left;
+    unicode-bidi:embed;
+  }
+
+  h1 { @include h1; }
+  h2 { @include h2; } 
+  h3 { @include h3; } 
+  h4 { @include h4; } 
+
+  p {
+    font-family:$helvetica-family;
+    font-size:13px;
+    text-align:left;
+    line-height: 20px;
+  }
+
+  a, a:visited {
+    cursor:pointer;
+    color:#0062C4;
+    -moz-outline-style:none;
+    text-decoration:none;
+    font-weight: normal;
+  }
+
+  a:hover { 
+    text-decoration:none;
+  }
+
+  img {
+    border:0;
+  }
+
+  select {
+    border:1px solid #bdc7d8;
+    font-family:$main-family;
+    font-size:11px;
+    padding:2px;
+  }
+
+  .pipe {
+    color:#cccccc;
+    padding:0 3px;
+    font-weight: normal;
+    font-size: 11px;
+  }
+
+  .clearfix:after { 
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+  }
+
+  .clearfix {
+    display:block;
+    zoom:1;
+  }
+
+  form {
+    margin:0;
+    padding:0;
+  }
+
+  label {
+    cursor:pointer;
+    //color:#666;
+    color: #000;
+    font-weight:bold;
+    vertical-align:middle;
+  }
+
+  label input {
+    font-weight:normal;
+  }
+
+  textarea,
+  .inputtext,
+  .inputpassword {
+    border:1px solid #bdc7d8;
+    font-family:$helvetica-family;
+    font-size:11px;
+    padding:3px;
+  }
+
+  .inputtext,
+  .inputpassword {
+    margin:0;
+    *margin:-1px 0;
+    padding-bottom:4px;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
