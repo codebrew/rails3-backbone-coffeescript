@@ -37,3 +37,7 @@ gem "mongoid", ">= 2.0.0.rc.7"
 gem "bson_ext", ">= 1.2.4"
 gem "jammit"
 gem "barista", "~> 1.0"
+gem "rspec-rails", ">= 2.5", :group => [:development, :test]
+gem "database_cleaner", :group => [:development, :test]
+gem "fabrication", :group => [:development, :test]
+gem "mongoid-rspec", ">= 1.4.1", :group => [:development, :test]
