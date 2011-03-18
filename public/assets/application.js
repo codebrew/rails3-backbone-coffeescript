@@ -1,0 +1,1 @@
+(function(){window.App={Models:{},Controllers:{},Views:{},currentUser:function(a){if(a){return this.user=new App.Models.User(a)}else{return this.user}}}}).call(this);
