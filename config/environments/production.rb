@@ -46,4 +46,7 @@ Rails3BackboneCoffeescript::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  # dont compile sass because heroku is read only
+  Sass::Plugin.options[:never_update] = true
 end
