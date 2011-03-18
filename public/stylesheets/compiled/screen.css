@@ -1,0 +1,363 @@
+/*@import "compass/reset";
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+/* line 17, ../../../app/stylesheets/lib/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../../../app/stylesheets/lib/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../../../app/stylesheets/lib/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../../app/stylesheets/lib/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../../../app/stylesheets/lib/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../../../app/stylesheets/lib/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+/* line 52, ../../../app/stylesheets/lib/_reset.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 55, ../../../app/stylesheets/lib/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 59, ../../../app/stylesheets/lib/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Facebook Defaults */
+/* All vertical blocks should be in increments of 18 */
+/* line 148, ../../../app/stylesheets/lib/_typography.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 45, ../../../app/stylesheets/lib/_typography.scss */
+body {
+  background: none repeat scroll 0 0 #FFFFFF;
+  color: #555555;
+  direction: ltr;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  unicode-bidi: embed;
+}
+
+/* line 57, ../../../app/stylesheets/lib/_typography.scss */
+h1 {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 58, ../../../app/stylesheets/lib/_typography.scss */
+h2 {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/* line 59, ../../../app/stylesheets/lib/_typography.scss */
+h3 {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 60, ../../../app/stylesheets/lib/_typography.scss */
+h4 {
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* line 62, ../../../app/stylesheets/lib/_typography.scss */
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+}
+
+/* line 69, ../../../app/stylesheets/lib/_typography.scss */
+a, a:visited {
+  cursor: pointer;
+  color: #0062C4;
+  -moz-outline-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* line 77, ../../../app/stylesheets/lib/_typography.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 81, ../../../app/stylesheets/lib/_typography.scss */
+img {
+  border: 0;
+}
+
+/* line 85, ../../../app/stylesheets/lib/_typography.scss */
+select {
+  border: 1px solid #bdc7d8;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  padding: 2px;
+}
+
+/* line 92, ../../../app/stylesheets/lib/_typography.scss */
+.pipe {
+  color: #cccccc;
+  padding: 0 3px;
+  font-weight: normal;
+  font-size: 11px;
+}
+
+/* line 99, ../../../app/stylesheets/lib/_typography.scss */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/* line 109, ../../../app/stylesheets/lib/_typography.scss */
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+
+/* line 114, ../../../app/stylesheets/lib/_typography.scss */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 119, ../../../app/stylesheets/lib/_typography.scss */
+label {
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+/* line 127, ../../../app/stylesheets/lib/_typography.scss */
+label input {
+  font-weight: normal;
+}
+
+/* line 133, ../../../app/stylesheets/lib/_typography.scss */
+textarea,
+.inputtext,
+.inputpassword {
+  border: 1px solid #bdc7d8;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  padding: 3px;
+}
+
+/* line 141, ../../../app/stylesheets/lib/_typography.scss */
+.inputtext,
+.inputpassword {
+  margin: 0;
+  *margin: -1px 0;
+  padding-bottom: 4px;
+}
+
+/* line 3, ../../../app/stylesheets/application/_base.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 7, ../../../app/stylesheets/application/_base.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  padding-top: 10px;
+}
+
+/* line 12, ../../../app/stylesheets/application/_base.scss */
+body {
+  background-color: #282828;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 0px 40px;
+}
+
+/* line 21, ../../../app/stylesheets/application/_base.scss */
+#main {
+  background-color: #E9E9E9;
+  min-height: 700px;
+}
+
+/* line 26, ../../../app/stylesheets/application/_base.scss */
+#footer {
+  background-color: #282828;
+  padding: 20px 0px;
+}
+
+/* line 31, ../../../app/stylesheets/application/_base.scss */
+#flash-messages {
+  background: #BCDD5B;
+  left: 0px;
+  line-height: 55px;
+  z-index: 1;
+}
+/* line 37, ../../../app/stylesheets/application/_base.scss */
+#flash-messages .container {
+  padding-top: 0;
+}
+/* line 41, ../../../app/stylesheets/application/_base.scss */
+#flash-messages .alert {
+  background: #F05931;
+}
+/* line 45, ../../../app/stylesheets/application/_base.scss */
+#flash-messages .notice, #flash-messages .alert {
+  padding: 15px 0px;
+}
+/* line 49, ../../../app/stylesheets/application/_base.scss */
+#flash-messages p {
+  line-height: 32px;
+  color: white;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 1, ../../../app/stylesheets/application/_header.scss */
+#header {
+  -webkit-box-shadow: #558a21 -2px 1px 2px;
+  background-color: #282828;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #333333), color-stop(100%, #1a1a1a));
+  background-image: -moz-linear-gradient(top, #333333 0%, #1a1a1a 100%);
+  background-image: linear-gradient(top, #333333 0%, #1a1a1a 100%);
+  border-bottom: 3px solid #4BC1DE;
+  height: 45px;
+}
+/* line 8, ../../../app/stylesheets/application/_header.scss */
+#header #logo {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 380px;
+}
+/* line 10, ../../../app/stylesheets/application/_header.scss */
+#header #logo h1 {
+  color: #fff;
+  font-size: 26px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 19, ../../../app/stylesheets/application/_header.scss */
+#nav {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 540px;
+}
+/* line 21, ../../../app/stylesheets/application/_header.scss */
+#nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 10px 0px 10px 0px;
+  float: right;
+}
+/* line 26, ../../../app/stylesheets/application/_header.scss */
+#nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 45, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3-backbone-coffeescript/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+#nav ul li:first-child, #nav ul li.first {
+  padding-left: 0;
+}
+/* line 46, ../../../../../.rvm/gems/ruby-1.9.2-p180@rails3-backbone-coffeescript/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal-list.scss */
+#nav ul li:last-child, #nav ul li.last {
+  padding-right: 0;
+}

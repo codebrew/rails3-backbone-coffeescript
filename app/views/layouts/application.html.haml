@@ -6,32 +6,11 @@
     = include_javascripts :common, :application
     = csrf_meta_tag
 
-  %body    
-    #header
-      .container
-        #logo
-          %h1 rails3-backbone-coffeescript
-        #nav
-          %ul
-            %li= link_to "home", root_path
-            - if user_signed_in?
-              %li= link_to "Settings", edit_user_registration_path
-              %li= link_to "Sign out", destroy_user_session_path
-            - else
-              %li= link_to "Login", new_user_session_path
-        .clearfix
-        
-    #flash-messages
-      - unless notice.blank?
-        .notice
-          .container
-            %p= notice
-
-      - unless alert.blank?
-        .alert
-          .container
-            %p= alert
-                
+  %body
+    = render :partial => "/layouts/header"
+    
+    = render :partial => "/layouts/flash"
+    
     #main
       .container
         = yield

@@ -18,37 +18,6 @@ body {
   padding: 0px 0px 40px;
 }
 
-#header {
-  -webkit-box-shadow: #558A21 -2px 1px 2px;
-  background-color: #282828;
-  @include linear-gradient(color-stops(#333, #1A1A1A));
-  border-bottom: 3px solid #4BC1DE;
-  height: 45px;
-  
-  #logo {
-    @include grid(8);
-    h1 {
-      color: #fff;
-      font-size: 26px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-  }
-}
-
-#nav {
-  @include grid(16);
-  ul {
-    @include horizontal-list-container;
-    padding: 10px 0px 10px 0px;
-    float: right;
-    
-    li {
-      @include horizontal-list-item(10px, "left");
-    }
-  }
-}
-
 #main {
   background-color: #E9E9E9;
   min-height: 700px;

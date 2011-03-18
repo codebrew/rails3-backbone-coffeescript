@@ -1,0 +1,10 @@
+#flash-messages
+  - unless notice.blank?
+    .notice
+      .container
+        %p= notice
+
+  - unless alert.blank?
+    .alert
+      .container
+        %p= alert
