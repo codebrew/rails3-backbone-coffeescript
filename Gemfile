@@ -41,3 +41,4 @@ gem "rspec-rails", ">= 2.5", :group => [:development, :test]
 gem "database_cleaner", :group => [:development, :test]
 gem "fabrication", :group => [:development, :test]
 gem "mongoid-rspec", ">= 1.4.1", :group => [:development, :test]
+gem "devise", ">= 1.2.rc"
