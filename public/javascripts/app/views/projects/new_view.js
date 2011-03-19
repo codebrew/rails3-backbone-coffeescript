@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 01:23:27 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 01:57:57 GMT from
  * /Users/fitz/Projects/rails3-backbone-coffeescript/app/coffeescripts/views/projects/new_view.coffee
  */
 
@@ -25,15 +25,12 @@
       "submit #project-form": "save"
     };
     NewView.prototype.save = function() {
-      alert("save");
+      this.options.model.save();
       return false;
     };
     NewView.prototype.render = function() {
       $(this.el).html(this.template()(this.options.model.toJSON()));
       this.$("form").link(this.options.model);
-      this.options.model.bind("all", function() {
-        return alert("changing");
-      });
       return this;
     };
     return NewView;

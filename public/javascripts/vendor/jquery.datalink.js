@@ -79,7 +79,10 @@ $.extend({
 
 			$this.triggerHandler( eventNameSetField + parts[1] + "!", args );
 			if ( value !== undefined ) {
-				target[ field ] = value;
+			  var attrs ={};
+			  attrs[field]=value;
+			  target.set(attrs);
+/*        target[ field ] = value;*/
 			}
 			$this.triggerHandler( eventNameChangeField + parts[1] + "!", args );
 		}
