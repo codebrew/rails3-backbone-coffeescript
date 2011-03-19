@@ -10,6 +10,7 @@ javascripts:
     - public/javascripts/vendor/underscore.js
     - public/javascripts/vendor/backbone.js
     - public/javascripts/vendor/handlebars.js
+    - public/javascripts/vendor/jquery.datalink.js
       
   application:
     - public/javascripts/app/lib/*
