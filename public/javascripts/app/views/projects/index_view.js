@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 02:16:50 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 03:25:10 GMT from
  * /Users/fitz/Projects/rails3-backbone-coffeescript/app/coffeescripts/views/projects/index_view.coffee
  */
 
@@ -21,10 +21,25 @@
     IndexView.prototype.template = function() {
       return JST["index"];
     };
+    IndexView.prototype.initialize = function() {
+      _.bindAll(this, 'addOne', 'addAll', 'render');
+      return this.options.projects.bind('refresh', this.addAll);
+    };
+    IndexView.prototype.addAll = function() {
+      return this.options.projects.each(this.addOne);
+    };
+    IndexView.prototype.addOne = function(project) {
+      var pv;
+      pv = new App.Views.Projects.ProjectView({
+        model: project
+      });
+      return this.$("#projects-table tbody").append(pv.render().el);
+    };
     IndexView.prototype.render = function() {
       $(this.el).html(this.template()({
         projects: this.options.projects.toJSON()
       }));
+      this.addAll();
       return this;
     };
     return IndexView;

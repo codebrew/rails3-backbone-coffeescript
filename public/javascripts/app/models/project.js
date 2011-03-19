@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 02:33:59 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 03:25:09 GMT from
  * /Users/fitz/Projects/rails3-backbone-coffeescript/app/coffeescripts/models/project.coffee
  */
 
@@ -16,7 +16,7 @@
       Project.__super__.constructor.apply(this, arguments);
     }
     __extends(Project, Backbone.MongoModel);
-    Project.prototype.url = '/projects';
+    Project.prototype.urlRoot = "/projects";
     Project.prototype.paramRoot = "project";
     return Project;
   })();

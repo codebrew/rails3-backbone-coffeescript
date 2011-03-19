@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Fri, 18 Mar 2011 22:00:37 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 02:49:18 GMT from
  * /Users/fitz/Projects/rails3-backbone-coffeescript/app/coffeescripts/controllers/projects_controller.coffee
  */
 

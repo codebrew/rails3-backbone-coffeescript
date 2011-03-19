@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 02:33:59 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 03:23:31 GMT from
  * /Users/fitz/Projects/rails3-backbone-coffeescript/app/coffeescripts/lib/mongo_model.coffee
  */
 

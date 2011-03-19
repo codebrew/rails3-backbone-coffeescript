@@ -1,6 +1,6 @@
 <h1> Listing projects </h1>
 
-<table>
+<table id="projects-table">
   <tr>
     <th> Name </th>
     <th> Description</th>
@@ -8,17 +8,6 @@
     <th></th>
     <th></th>
   </tr>
-
-  {{#projects}}
-    <tr>
-      <td>{{name}}</td>
-      <td>{{description}}</td>
-      <td><a href="#/{{_id}}">Show</td>
-      <td>Edit</td>
-      <td>Destroy</td>
-    </tr>
-  {{/projects}}
-  
 </table>
 <br/>
 
