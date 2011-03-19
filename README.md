@@ -5,9 +5,9 @@ This is an example rails 3 app built with backbone.js, coffeescript and mongoDB 
 ## Help and Info
 
 To follow the development of this app, follow us on Twitter:
-http://twitter.com/codebrewstudios.
+[http://twitter.com/codebrewstudios](http://twitter.com/codebrewstudios).
 
-If you need any projects built using this stack contact us at services@codebrewstudios.com
+If you need any projects built using this stack feel free to [contact us](services@codebrewstudios.com)
 
 ## Dependencies
 1. Ruby 1.9.2
