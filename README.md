@@ -7,7 +7,7 @@ This is an example rails 3 app built with [backbone.js][backbone_js], [coffeescr
 To follow the development of this app, follow us on Twitter:
 [http://twitter.com/codebrewstudios](http://twitter.com/codebrewstudios).
 
-If you need any projects built using this stack feel free to [contact us](services@codebrewstudios.com)
+If you need any projects built using this stack feel free to contact us at [services@codebrewstudios.com](mailto:services@codebrewstudios.com)
 
 ## Dependencies
 1. Ruby 1.9.2
