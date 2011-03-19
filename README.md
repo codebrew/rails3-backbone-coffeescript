@@ -17,6 +17,17 @@ If you need any projects built using this stack feel free to contact us at [serv
 
 Using [rvm][rvm] is recommended
 
+## Project layout
+
+The most interesting part of the project exists inside the app/coffeescripts folder.
+Its broken down into 4 main parts
+
+1. lib - javascript library files to use through out the application
+2. Controllers dir - this is where our backbone controllers live
+3. Model dir - this is where backbone models and collections are defined
+4. Views - backbone views (widgets)
+5. templates - handlebar.js templates to be used by our backbone views
+
 [backbone_js]: http://documentcloud.github.com/backbone     "backbone.js"
 [coffeescript]: http://jashkenas.github.com/coffee-script   "coffeescript"
 [mongodb]: http://www.mongodb.org                           "mongodb"
