@@ -15,8 +15,9 @@ If you need any projects built using this stack feel free to [contact us](servic
 3. [Coffeescript][coffeescript] 1.0
 4. [mongoDB](http://www.mongodb.org) (any recent stable version should work, we use 1.8)
 
-Using [rvm](http://rvm.beginrescueend.com]) is recommended
+Using [rvm][rvm] is recommended
 
 [backbone_js]: http://documentcloud.github.com/backbone     "backbone.js"
 [coffeescript]: http://jashkenas.github.com/coffee-script   "coffeescript"
 [mongodb]: http://www.mongodb.org                           "mongodb"
+[rvm]: http://rvm.beginrescueend.com                        "rvm"
