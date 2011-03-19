@@ -13,6 +13,6 @@ If you need any projects built using this stack feel free to [contact us](servic
 1. Ruby 1.9.2
 2. Rails 3
 3. [Coffeescript 1.0](www.coffeescript.org)
-4. mongoDB (any recent stable version should work, we use 1.8)
+4. [mongoDB](http://www.mongodb.org) (any recent stable version should work, we use 1.8)
 
 Using [rvm](http://rvm.beginrescueend.com]) is recommended
