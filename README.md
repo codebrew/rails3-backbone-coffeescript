@@ -1,6 +1,6 @@
 # Rails3-backbone-coffeescript
 
-This is an example rails 3 app built with backbone.js, coffeescript and mongoDB (using mongoid)
+This is an example rails 3 app built with [backbone_js], coffeescript and mongoDB (using mongoid)
 
 ## Help and Info
 
@@ -12,7 +12,9 @@ If you need any projects built using this stack feel free to [contact us](servic
 ## Dependencies
 1. Ruby 1.9.2
 2. Rails 3
-3. [Coffeescript 1.0](www.coffeescript.org)
+3. [Coffeescript 1.0](http://coffeescript.org)
 4. [mongoDB](http://www.mongodb.org) (any recent stable version should work, we use 1.8)
 
 Using [rvm](http://rvm.beginrescueend.com]) is recommended
+
+[backbone_js]: http://documentcloud.github.com/backbone   "backbone.js"
