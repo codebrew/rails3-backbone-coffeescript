@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sat, 19 Mar 2011 01:57:57 GMT from
+/* DO NOT MODIFY. This file was compiled Tue, 05 Apr 2011 21:19:40 GMT from
  * /Users/fitz/Projects/rails3-backbone-coffeescript/app/coffeescripts/views/projects/new_view.coffee
  */
 
@@ -30,7 +30,7 @@
     };
     NewView.prototype.render = function() {
       $(this.el).html(this.template()(this.options.model.toJSON()));
-      this.$("form").link(this.options.model);
+      this.$("form").backboneLink(this.options.model);
       return this;
     };
     return NewView;

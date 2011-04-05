@@ -13,6 +13,7 @@ class App.Views.Projects.NewView extends Backbone.View
     
   render: ->
     $(this.el).html(this.template()(this.options.model.toJSON() ))
-    this.$("form").link(@options.model)
+    
+    this.$("form").backboneLink(@options.model)
     
     return this
